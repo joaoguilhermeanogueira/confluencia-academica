@@ -1,0 +1,23 @@
+SITE · confluenciaacademica.com — como colocar no ar (10 minutos + espera do DNS)
+
+A) REGISTRAR O DOMÍNIO
+   confluenciaacademica.com em um registrador (ex.: Hostinger, GoDaddy, Namecheap, Cloudflare Registrar). ~US$ 10–15/ano.
+   Se já estiver tomado, alternativas: confluenciaacademica.com.br (Registro.br, ~R$ 40) ou chapaconfluencia.com.
+
+B) CRIAR O REPOSITÓRIO NO GITHUB (conta joaoguilhermeanogueira)
+   1. github.com/new → nome: confluencia-academica → Public → marcar "Add a README" → Create.
+   2. "Add file" → "Upload files" → arrastar os 5 arquivos desta pasta (index.html, og.png, favicon.png, apple-touch-icon.png, CNAME) → Commit.
+   3. Settings → Pages → Source: "Deploy from a branch" → Branch: main / (root) → Save.
+   4. Em 1–2 min o site abre em https://joaoguilhermeanogueira.github.io/confluencia-academica/ (link provisório, já pode usar).
+   5. Ainda em Settings → Pages → Custom domain: confluenciaacademica.com → Save. Depois que o DNS propagar, marcar "Enforce HTTPS".
+
+C) DNS NO REGISTRADOR (zona do domínio)
+   Tipo A     Nome @     Valor 185.199.108.153
+   Tipo A     Nome @     Valor 185.199.109.153
+   Tipo A     Nome @     Valor 185.199.110.153
+   Tipo A     Nome @     Valor 185.199.111.153
+   Tipo CNAME Nome www   Valor joaoguilhermeanogueira.github.io
+   Propagação: de minutos a algumas horas.
+
+D) DEPOIS
+   Me avise: eu troco o destino do link "Conheça o projeto" no Linktree para https://confluenciaacademica.com e atualizo o guia. O QR do panfleto não muda (aponta para o Linktree).
